@@ -2029,9 +2029,9 @@ function buildHtmlWithBakedData(){
   var _w=[{"id":1774608119577,"cat":"personal","title":"ああああ","videoUrl":"","videoData":"","thumb":"","body":"","bodyHtml":"","tags":[],"published":true,"createdAt":1774608119578},{"id":1774608122782,"cat":"personal","title":"だだだだ","videoUrl":"","videoData":"","thumb":"","body":"","bodyHtml":"","tags":[],"published":true,"createdAt":1774608122782},{"id":1774608125244,"cat":"personal","title":"らららら","videoUrl":"","videoData":"","thumb":"","body":"","bodyHtml":"","tags":[],"published":true,"createdAt":1774608125244}];
   var _s={"eyebrow":"3D CG Creator","herosub":"3DCGとモーションで映像をつくっています。","cta1":"Works","cta2":"Contact","contactsub":"お仕事のご依頼・ご相談はこちらからどうぞ。\n2〜3営業日以内にご返信します。","x":"#","ig":"#","yt":"#","reel":"","color":"#e0ffff","font_heading":"Bebas Neue","font_body":"Noto Sans JP","formspree":"","site_title":"","site_desc":"","ogp_image":""};
   var _d={"show_about":false,"show_contact":true,"hero_layout":"split","cols":"auto","section_order":["hero","about","work","contact"],"about_title":"About Me","about_body":"","about_img":""};
-  if(_w&&!localStorage.getItem('mczk_works'))localStorage.setItem('mczk_works',JSON.stringify(_w));
-  if(_s&&!localStorage.getItem('mczk_site'))localStorage.setItem('mczk_site',JSON.stringify(_s));
-  if(_d&&!localStorage.getItem('mczk_design'))localStorage.setItem('mczk_design',JSON.stringify(_d));
+  if(_w)localStorage.setItem('mczk_works',JSON.stringify(_w));
+  if(_s)localStorage.setItem('mczk_site',JSON.stringify(_s));
+  if(_d)localStorage.setItem('mczk_design',JSON.stringify(_d));
 })();
 /* __BAKED_DATA_END__ */';
   const bakedBlock = bakedMarkerStart + '\n' +
@@ -2039,9 +2039,9 @@ function buildHtmlWithBakedData(){
     '  var _w=' + JSON.stringify(works) + ';\n' +
     '  var _s=' + JSON.stringify(site) + ';\n' +
     '  var _d=' + JSON.stringify(design) + ';\n' +
-    "  if(_w&&!localStorage.getItem('mczk_works'))localStorage.setItem('mczk_works',JSON.stringify(_w));\n" +
-    "  if(_s&&!localStorage.getItem('mczk_site'))localStorage.setItem('mczk_site',JSON.stringify(_s));\n" +
-    "  if(_d&&!localStorage.getItem('mczk_design'))localStorage.setItem('mczk_design',JSON.stringify(_d));\n" +
+    "  if(_w)localStorage.setItem('mczk_works',JSON.stringify(_w));\n" +
+    "  if(_s)localStorage.setItem('mczk_site',JSON.stringify(_s));\n" +
+    "  if(_d)localStorage.setItem('mczk_design',JSON.stringify(_d));\n" +
     (pw ? "  if(!localStorage.getItem('mczk_pw'))localStorage.setItem('mczk_pw'," + JSON.stringify(pw) + ");\n" : '') +
     '})();\n' +
     bakedMarkerEnd;
