@@ -1,4 +1,6 @@
-<html lang="ja" style="--accent: #e0ffff; --glow: rgba(224,255,255,0.10); --font-heading: 'Bebas Neue', sans-serif; --font-body: 'Noto Sans JP', sans-serif;"><head>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title id="siteTitle">mczk</title>
@@ -12,7 +14,7 @@
 <meta name="twitter:description" id="twDesc" content="">
 <meta name="twitter:image" id="twImage" content="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Noto+Sans+JP:wght@300;400;500&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#080a0f;--surface:#0f1117;--border:#1c2030;--accent:#e0ffff;--text:#e8eaf0;--muted:#4e5568;--glow:rgba(224,255,255,0.10);--font-heading:'Bebas Neue',sans-serif;--font-body:'Noto Sans JP',sans-serif;}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
@@ -285,455 +287,10 @@ footer{border-top:1px solid var(--border);padding:2.2rem 5vw;display:flex;justif
 }
 
 </style>
-<style data-id="immersive-translate-input-injected-css">.immersive-translate-input {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 2147483647;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.immersive-translate-attach-loading::after {
-  content: " ";
-
-  --loading-color: #f78fb6;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  display: block;
-  margin: 12px auto;
-  position: relative;
-  color: white;
-  left: -100px;
-  box-sizing: border-box;
-  animation: immersiveTranslateShadowRolling 1.5s linear infinite;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-2000%, -50%);
-  z-index: 100;
-}
-
-.immersive-translate-loading-spinner {
-  vertical-align: middle !important;
-  width: 10px !important;
-  height: 10px !important;
-  display: inline-block !important;
-  margin: 0 4px !important;
-  border: 2px rgba(221, 244, 255, 0.6) solid !important;
-  border-top: 2px rgba(0, 0, 0, 0.375) solid !important;
-  border-left: 2px rgba(0, 0, 0, 0.375) solid !important;
-  border-radius: 50% !important;
-  padding: 0 !important;
-  -webkit-animation: immersive-translate-loading-animation 0.6s infinite linear !important;
-  animation: immersive-translate-loading-animation 0.6s infinite linear !important;
-}
-
-@-webkit-keyframes immersive-translate-loading-animation {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-
-  to {
-    -webkit-transform: rotate(359deg);
-  }
-}
-
-@keyframes immersive-translate-loading-animation {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(359deg);
-  }
-}
-
-.immersive-translate-input-loading {
-  --loading-color: #f78fb6;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  display: block;
-  margin: 12px auto;
-  position: relative;
-  color: white;
-  left: -100px;
-  box-sizing: border-box;
-  animation: immersiveTranslateShadowRolling 1.5s linear infinite;
-}
-
-@keyframes immersiveTranslateShadowRolling {
-  0% {
-    box-shadow: 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0),
-      0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
-  }
-
-  12% {
-    box-shadow: 100px 0 var(--loading-color), 0px 0 rgba(255, 255, 255, 0),
-      0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
-  }
-
-  25% {
-    box-shadow: 110px 0 var(--loading-color), 100px 0 var(--loading-color),
-      0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
-  }
-
-  36% {
-    box-shadow: 120px 0 var(--loading-color), 110px 0 var(--loading-color),
-      100px 0 var(--loading-color), 0px 0 rgba(255, 255, 255, 0);
-  }
-
-  50% {
-    box-shadow: 130px 0 var(--loading-color), 120px 0 var(--loading-color),
-      110px 0 var(--loading-color), 100px 0 var(--loading-color);
-  }
-
-  62% {
-    box-shadow: 200px 0 rgba(255, 255, 255, 0), 130px 0 var(--loading-color),
-      120px 0 var(--loading-color), 110px 0 var(--loading-color);
-  }
-
-  75% {
-    box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0),
-      130px 0 var(--loading-color), 120px 0 var(--loading-color);
-  }
-
-  87% {
-    box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0),
-      200px 0 rgba(255, 255, 255, 0), 130px 0 var(--loading-color);
-  }
-
-  100% {
-    box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0),
-      200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0);
-  }
-}
-
-.immersive-translate-modal {
-  position: fixed;
-  z-index: 2147483647;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-  font-size: 15px;
-}
-
-.immersive-translate-modal-content {
-  background-color: #fefefe;
-  margin: 10% auto;
-  padding: 40px 24px 24px;
-  border-radius: 12px;
-  width: 350px;
-  font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
-    "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
-  position: relative;
-}
-
-@media screen and (max-width: 768px) {
-  .immersive-translate-modal-content {
-    margin: 25% auto !important;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .immersive-translate-modal-content {
-    width: 80vw !important;
-    margin: 20vh auto !important;
-    padding: 20px 12px 12px !important;
-  }
-
-  .immersive-translate-modal-title {
-    font-size: 14px !important;
-  }
-
-  .immersive-translate-modal-body {
-    font-size: 13px !important;
-    max-height: 60vh !important;
-  }
-
-  .immersive-translate-btn {
-    font-size: 13px !important;
-    padding: 8px 16px !important;
-    margin: 0 4px !important;
-  }
-
-  .immersive-translate-modal-footer {
-    gap: 6px !important;
-    margin-top: 16px !important;
-  }
-}
-
-.immersive-translate-modal .immersive-translate-modal-content-in-input {
-  max-width: 500px;
-}
-.immersive-translate-modal-content-in-input .immersive-translate-modal-body {
-  text-align: left;
-  max-height: unset;
-}
-
-.immersive-translate-modal-title {
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  color: #333333;
-}
-
-.immersive-translate-modal-body {
-  text-align: center;
-  font-size: 14px;
-  font-weight: 400;
-  color: #333333;
-  margin-top: 24px;
-}
-
-@media screen and (max-width: 768px) {
-  .immersive-translate-modal-body {
-    max-height: 250px;
-    overflow-y: auto;
-  }
-}
-
-.immersive-translate-close {
-  color: #666666;
-  position: absolute;
-  right: 16px;
-  top: 16px;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.immersive-translate-close:hover,
-.immersive-translate-close:focus {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.immersive-translate-modal-footer {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 24px;
-}
-
-.immersive-translate-btn {
-  width: fit-content;
-  color: #fff;
-  background-color: #ea4c89;
-  border: none;
-  font-size: 14px;
-  margin: 0 8px;
-  padding: 9px 30px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.immersive-translate-btn-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
-.immersive-translate-btn:hover {
-  background-color: #f082ac;
-}
-.immersive-translate-btn:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-.immersive-translate-btn:disabled:hover {
-  background-color: #ea4c89;
-}
-
-.immersive-translate-link-btn {
-  background-color: transparent;
-  color: #ea4c89;
-  border: none;
-  cursor: pointer;
-  height: 30px;
-  line-height: 30px;
-}
-
-.immersive-translate-cancel-btn {
-  /* gray color */
-  background-color: rgb(89, 107, 120);
-}
-
-.immersive-translate-cancel-btn:hover {
-  background-color: hsl(205, 20%, 32%);
-}
-
-.immersive-translate-action-btn {
-  background-color: transparent;
-  color: #ea4c89;
-  border: 1px solid #ea4c89;
-}
-
-.immersive-translate-btn svg {
-  margin-right: 5px;
-}
-
-.immersive-translate-link {
-  cursor: pointer;
-  user-select: none;
-  -webkit-user-drag: none;
-  text-decoration: none;
-  color: #ea4c89;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
-}
-
-.immersive-translate-primary-link {
-  cursor: pointer;
-  user-select: none;
-  -webkit-user-drag: none;
-  text-decoration: none;
-  color: #ea4c89;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
-}
-
-.immersive-translate-modal input[type="radio"] {
-  margin: 0 6px;
-  cursor: pointer;
-}
-
-.immersive-translate-modal label {
-  cursor: pointer;
-}
-
-.immersive-translate-close-action {
-  position: absolute;
-  top: 2px;
-  right: 0px;
-  cursor: pointer;
-}
-
-.imt-image-status {
-  background-color: rgba(0, 0, 0, 0.5) !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-  border-radius: 16px !important;
-}
-.imt-image-status img,
-.imt-image-status svg,
-.imt-img-loading {
-  width: 28px !important;
-  height: 28px !important;
-  margin: 0 0 8px 0 !important;
-  min-height: 28px !important;
-  min-width: 28px !important;
-  position: relative !important;
-}
-.imt-img-loading {
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAtFBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////oK74hAAAAPHRSTlMABBMIDyQXHwyBfFdDMSw+OjXCb+5RG51IvV/k0rOqlGRM6KKMhdvNyZBz9MaupmxpWyj437iYd/yJVNZeuUC7AAACt0lEQVRIx53T2XKiUBCA4QYOiyCbiAsuuGBcYtxiYtT3f6/pbqoYHVFO5r+iivpo6DpAWYpqeoFfr9f90DsYAuRSWkFnPO50OgR9PwiCUFcl2GEcx+N/YBh6pvKaefHlUgZd1zVe0NbYcQjGBfzrPE8Xz8aF+71D8gG6DHFPpc4a7xFiCDuhaWgKgGIJQ3d5IMGDrpS4S5KgpIm+en9f6PlAhKby4JwEIxlYJV9h5k5nee9GoxHJ2IDSNB0dwdad1NAxDJ/uXDHYmebdk4PdbkS58CIVHdYSUHTYYRWOJblWSyu2lmy3KNFVJNBhxcuGW4YBVCbYGRZwIooipHsNqjM4FbgOQqQqSKQQU9V8xmi1QlgHqQQ6DDBvRUVCDirs+EzGDGOQTCATgtYTnbCVLgsVgRE0T1QE0qHCFAht2z6dLvJQs3Lo2FQoDxWNUiBhaP4eRgwNkI+dAjVOA/kUrIDwf3CG8NfNOE0eiFotSuo+rBiq8tD9oY4Qzc6YJw99hl1wzpQvD7ef2M8QgnOGJfJw+EltQc+oX2yn907QB22WZcvlUpd143dqQu+8pCJZuGE4xCuPXJqqcs5sNpsI93Rmzym1k4Npk+oD1SH3/a3LOK/JpUBpWfqNySxWzCfNCUITuDG5dtuphrUJ1myeIE9bIsPiKrfqTai5WZxbhtNphYx6GEIHihyGFTI69lje/rxajdh0s0msZ0zYxyPLhYCb1CyHm9Qsd2H37Y3lugVwL9kNh8Ot8cha6fUNQ8nuXi5z9/ExsAO4zQrb/ev1yrCB7lGyQzgYDGuxq1toDN/JGvN+HyWNHKB7zEoK+PX11e12G431erGYzwmytAWU56fkMHY5JJnDRR2eZji3AwtIcrEV8Cojat/BdQ7XOwGV1e1hDjGGjXbdArm8uJZtCH5MbcctVX8A1WpqumJHwckAAAAASUVORK5CYII=");
-  background-size: 28px 28px;
-  animation: image-loading-rotate 1s linear infinite !important;
-}
-
-.imt-image-status span {
-  color: var(--bg-2, #fff) !important;
-  font-size: 14px !important;
-  line-height: 14px !important;
-  font-weight: 500 !important;
-  font-family: "PingFang SC", Arial, sans-serif !important;
-}
-
-.imt-primary-button {
-  display: flex;
-  padding: 12px 80px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  border-radius: 8px;
-  background: #ea4c89;
-  color: #fff;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
-  border: none;
-  cursor: pointer;
-}
-
-.imt-retry-text {
-  color: #999;
-  text-align: center;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21px;
-  cursor: pointer;
-}
-
-.imt-action-container {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.imt-modal-content-text {
-  text-align: left;
-  color: #333;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-@keyframes image-loading-rotate {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-
-.imt-linear-gradient-text {
-  background: linear-gradient(90deg, #00a6ff 0%, #c369ff 52.4%, #ff4590 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.imt-flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.imt-linear-black-btn {
-  border-radius: 50px;
-  background: linear-gradient(66deg, #222 19%, #696969 94.25%);
-  height: 48px;
-  width: 100%;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  justify-content: center;
-}
-</style></head>
+</head>
 <body>
 
-<div id="pwScreen" style="display: none;">
+<div id="pwScreen">
   <div class="pw-box">
     <div class="pw-logo" onclick="closeAdmin()" style="cursor:pointer;" title="公開サイトへ戻る">MCZK</div>
     <div class="pw-sub">Admin Panel</div>
@@ -776,28 +333,10 @@ footer{border-top:1px solid var(--border);padding:2.2rem 5vw;display:flex;justif
             <option value="date">日付（新しい順）</option>
           </select>
         </div>
-        <div class="wl" id="adminWL"><div class="wl-item" draggable="true" data-id="1774608119577">
-      <span style="color:var(--muted);font-size:0.8rem;margin-right:0.2rem;cursor:grab;">⠿</span>
-      <div class="wl-cat">自主制作</div>
-      <div class="wl-title">ああああ</div>
-      <span class="wl-pub-badge" onclick="togglePublished(0)" title="クリックで公開/下書き切り替え">公開</span>
-      <div class="wl-actions"><button class="ib ib-edit" onclick="editWork(0)">編集</button><button class="ib ib-del" onclick="deleteWork(0)">削除</button></div>
-    </div><div class="wl-item" draggable="true" data-id="1774608122782">
-      <span style="color:var(--muted);font-size:0.8rem;margin-right:0.2rem;cursor:grab;">⠿</span>
-      <div class="wl-cat">自主制作</div>
-      <div class="wl-title">だだだだ</div>
-      <span class="wl-pub-badge" onclick="togglePublished(1)" title="クリックで公開/下書き切り替え">公開</span>
-      <div class="wl-actions"><button class="ib ib-edit" onclick="editWork(1)">編集</button><button class="ib ib-del" onclick="deleteWork(1)">削除</button></div>
-    </div><div class="wl-item" draggable="true" data-id="1774608125244">
-      <span style="color:var(--muted);font-size:0.8rem;margin-right:0.2rem;cursor:grab;">⠿</span>
-      <div class="wl-cat">自主制作</div>
-      <div class="wl-title">らららら</div>
-      <span class="wl-pub-badge" onclick="togglePublished(2)" title="クリックで公開/下書き切り替え">公開</span>
-      <div class="wl-actions"><button class="ib ib-edit" onclick="editWork(2)">編集</button><button class="ib ib-del" onclick="deleteWork(2)">削除</button></div>
-    </div></div>
+        <div class="wl" id="adminWL"></div>
         <div class="a-card">
           <div class="a-card-title" id="fmLabel">新規追加</div>
-          <input type="hidden" id="editIdx" value="">
+          <input type="hidden" id="editIdx">
           <div class="a-row">
             <div class="a-fg"><label class="a-label">タイトル</label><input class="a-input" id="f_title" placeholder="作品タイトル"></div>
             <div class="a-fg"><label class="a-label">カテゴリ</label>
@@ -830,7 +369,7 @@ footer{border-top:1px solid var(--border);padding:2.2rem 5vw;display:flex;justif
               </label>
               <div id="videoFilePreview" style="margin-top:0.5rem;display:none;aspect-ratio:16/9;background:#0a0c14;border:1px solid var(--border);border-radius:2px;overflow:hidden;"></div>
               <div id="videoFileName" style="font-family:'Space Mono',monospace;font-size:0.62rem;color:var(--accent);margin-top:0.35rem;display:none;"></div>
-              <input type="hidden" id="f_video_data" value="">
+              <input type="hidden" id="f_video_data">
             </div>
           </div>
           <div class="a-fg"><label class="a-label">サムネイル画像URL</label><input class="a-input" id="f_thumb" placeholder="https://...（動画なしの場合）"></div>
@@ -850,7 +389,7 @@ footer{border-top:1px solid var(--border);padding:2.2rem 5vw;display:flex;justif
           <div class="a-fg"><label class="a-label">タグ（カンマ区切り）</label><input class="a-input" id="f_tags" placeholder="Blender, After Effects"></div>
           <div class="a-fg" style="display:flex;align-items:center;gap:0.8rem;padding:0.6rem 0;">
             <label style="display:flex;align-items:center;gap:0.6rem;cursor:pointer;font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--muted);">
-              <input type="checkbox" id="f_published" checked="" style="accent-color:var(--accent);width:15px;height:15px;"> 公開（チェックOFF＝下書き：公開サイトに非表示）
+              <input type="checkbox" id="f_published" checked style="accent-color:var(--accent);width:15px;height:15px;"> 公開（チェックOFF＝下書き：公開サイトに非表示）
             </label>
           </div>
           <div class="a-actions">
@@ -910,7 +449,7 @@ footer{border-top:1px solid var(--border);padding:2.2rem 5vw;display:flex;justif
           <div style="display:flex;gap:0.8rem;align-items:center;">
             <input class="a-input" id="s_color" placeholder="#e0ffff" style="max-width:130px;" oninput="syncColorPicker()">
             <input type="color" id="s_colorPicker" value="#e0ffff" style="width:40px;height:40px;border:none;background:none;cursor:pointer;padding:0;" oninput="syncColorInput()">
-            <div id="colorPreview" style="width: 40px; height: 40px; border-radius: 2px; border: 1px solid var(--border); background: rgb(224, 255, 255);"></div>
+            <div id="colorPreview" style="width:40px;height:40px;border-radius:2px;border:1px solid var(--border);"></div>
           </div>
         </div>
         <div class="a-card">
@@ -953,7 +492,7 @@ footer{border-top:1px solid var(--border);padding:2.2rem 5vw;display:flex;justif
               <input type="checkbox" id="d_show_about" onchange="saveDesign()" style="accent-color:var(--accent);width:15px;height:15px;"> About セクション表示
             </label>
             <label style="display:flex;align-items:center;gap:0.7rem;cursor:pointer;font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--muted);">
-              <input type="checkbox" id="d_show_contact" checked="" onchange="saveDesign()" style="accent-color:var(--accent);width:15px;height:15px;"> Contact セクション表示
+              <input type="checkbox" id="d_show_contact" checked onchange="saveDesign()" style="accent-color:var(--accent);width:15px;height:15px;"> Contact セクション表示
             </label>
           </div>
         </div>
@@ -968,7 +507,7 @@ footer{border-top:1px solid var(--border);padding:2.2rem 5vw;display:flex;justif
           <div class="a-card-title">Hero レイアウト</div>
           <div class="a-fg" style="display:flex;flex-direction:column;gap:0.5rem;">
             <label style="display:flex;align-items:center;gap:0.7rem;cursor:pointer;font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--muted);">
-              <input type="radio" name="d_hero_layout" value="split" id="d_hero_split" checked="" onchange="saveDesign()" style="accent-color:var(--accent);"> 左テキスト + 右Reel（現在）
+              <input type="radio" name="d_hero_layout" value="split" id="d_hero_split" checked onchange="saveDesign()" style="accent-color:var(--accent);"> 左テキスト + 右Reel（現在）
             </label>
             <label style="display:flex;align-items:center;gap:0.7rem;cursor:pointer;font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--muted);">
               <input type="radio" name="d_hero_layout" value="center" id="d_hero_center" onchange="saveDesign()" style="accent-color:var(--accent);"> 中央寄せ（Reelなし）
@@ -982,7 +521,7 @@ footer{border-top:1px solid var(--border);padding:2.2rem 5vw;display:flex;justif
           <div class="a-card-title">Works グリッド列数</div>
           <div class="a-fg" style="display:flex;gap:0.5rem;flex-wrap:wrap;">
             <label style="display:flex;align-items:center;gap:0.4rem;cursor:pointer;font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--muted);">
-              <input type="radio" name="d_cols" value="auto" id="d_cols_auto" checked="" onchange="saveDesign()" style="accent-color:var(--accent);"> 自動（推奨）
+              <input type="radio" name="d_cols" value="auto" id="d_cols_auto" checked onchange="saveDesign()" style="accent-color:var(--accent);"> 自動（推奨）
             </label>
             <label style="display:flex;align-items:center;gap:0.4rem;cursor:pointer;font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--muted);">
               <input type="radio" name="d_cols" value="1" onchange="saveDesign()" style="accent-color:var(--accent);"> 1列
@@ -999,11 +538,11 @@ footer{border-top:1px solid var(--border);padding:2.2rem 5vw;display:flex;justif
           <div class="a-card-title">セクション表示順</div>
           <div class="a-hint" style="margin-bottom:0.7rem;">ドラッグで並び替え</div>
           <div id="sectionOrder" style="display:flex;flex-direction:column;gap:0.4rem;">
-            
-            
-            
-            
-          <div class="section-order-item" draggable="true" data-sec="hero">⠿ Hero</div><div class="section-order-item" draggable="true" data-sec="about">⠿ About</div><div class="section-order-item" draggable="true" data-sec="work">⠿ Work</div><div class="section-order-item" draggable="true" data-sec="contact">⠿ Contact</div></div>
+            <div class="section-order-item" draggable="true" data-sec="hero">⠿ Hero</div>
+            <div class="section-order-item" draggable="true" data-sec="about">⠿ About</div>
+            <div class="section-order-item" draggable="true" data-sec="work">⠿ Work</div>
+            <div class="section-order-item" draggable="true" data-sec="contact">⠿ Contact</div>
+          </div>
         </div>
         <div class="a-actions">
           <button class="a-btn a-btn-primary" onclick="applyDesignAndPreview()">反映</button>
@@ -1052,106 +591,7 @@ footer{border-top:1px solid var(--border);padding:2.2rem 5vw;display:flex;justif
         </div>
         <div class="preview-viewport" id="previewViewport">
           <div class="preview-frame" id="previewFrame">
-            <div class="admin-preview-inner" id="adminPreviewInner"><div style="display: block;">
-  <nav>
-    <a class="nav-logo" href="#" id="navLogo">MCZK</a>
-    <ul class="nav-links">
-      <li><a href="#work">Work</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  
-
-  
-
-  
-
-  
-
-  <section id="hero">
-    <div class="hero-bg" id="heroBg" style="background: radial-gradient(60% 70% at 15% 60%, rgba(224, 255, 255, 0.07) 0%, transparent 60%), radial-gradient(40% 50% at 80% 30%, rgba(100, 180, 255, 0.05) 0%, transparent 55%), radial-gradient(50% 40% at 50% 90%, rgba(150, 100, 255, 0.04) 0%, transparent 60%), linear-gradient(160deg, rgb(8, 10, 15) 0%, rgb(10, 13, 22) 40%, rgb(8, 10, 15) 100%);"></div>
-    <div class="hero-grid"></div>
-    <div class="hero-inner" style="grid-template-columns: 1fr 1fr; text-align: left;">
-      <div class="hero-content">
-        <div class="hero-eyebrow" id="pub_eyebrow" contenteditable="true" dir="ltr" style="unicode-bidi: plaintext;">3D CG Creator</div>
-        <h1 class="hero-title" contenteditable="true" dir="ltr" style="unicode-bidi: plaintext;"><span class="t-white">MC</span><span class="t-accent">Z</span><span class="t-white">K</span></h1>
-        <p class="hero-sub" id="pub_herosub" contenteditable="true" dir="ltr" style="unicode-bidi: plaintext;">3DCGとモーションで映像をつくっています。</p>
-        <div class="hero-cta">
-          <a href="#work" class="btn btn-accent" id="pub_cta1" style="cursor: pointer; outline: rgba(224, 255, 255, 0.4) dashed 1px;">Works</a>
-          <a href="#contact" class="btn btn-outline" id="pub_cta2" style="cursor: pointer; outline: rgba(224, 255, 255, 0.4) dashed 1px;">Contact</a>
-        </div>
-        <div class="hero-socials" id="hero_socials">
-          <a class="hero-social-link" id="pub_x_hero" href="#" target="_blank" rel="noopener">X</a>
-          <a class="hero-social-link" id="pub_ig_hero" href="#" target="_blank" rel="noopener">Instagram</a>
-          <a class="hero-social-link" id="pub_yt_hero" href="#" target="_blank" rel="noopener">YouTube</a>
-        </div>
-      </div>
-      <div class="hero-reel" style="display: block; margin-top: 0px;">
-        <div class="hero-reel-wrap" id="heroReelWrap"><div class="hero-reel-placeholder"><div class="hero-reel-play">▶</div><div class="hero-reel-label">Reel</div></div></div>
-      </div>
-    </div>
-  </section><section id="about" style="display: none;">
-    <div class="section-label">About</div>
-    <div class="about-inner" id="aboutInner">
-      <div class="about-img-ph" id="aboutImgWrap">IMG</div>
-      <div>
-        <h2 class="about-title" id="pub_about_title" contenteditable="true" dir="ltr" style="unicode-bidi: plaintext;">About Me</h2>
-        <p class="about-body" id="pub_about_body" contenteditable="true" dir="ltr" style="unicode-bidi: plaintext;"></p>
-      </div>
-    </div>
-  </section><section id="work">
-    <div class="work-header reveal visible">
-      <div>
-        <div class="section-label">Work</div>
-        <h2 class="work-title">SELECTED WORKS</h2>
-      </div>
-      <div class="filter-tabs">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="personal">自主制作</button>
-        <button class="filter-btn" data-filter="mv">MV</button>
-        <button class="filter-btn" data-filter="motion">Motion</button>
-        <button class="filter-btn" data-filter="three">3DCG</button>
-        <button class="filter-btn" data-filter="live">Live</button>
-      </div>
-    </div>
-    <div class="work-grid" id="workGrid" style="grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));"><div class="work-card">
-      <div class="work-card-media"><div class="work-placeholder"><div class="work-play">▶</div><div class="work-ph-label">自主制作</div></div></div>
-      <div class="work-card-body"><div class="work-cat">自主制作</div><div class="work-card-title">ああああ</div><div class="work-card-desc"></div></div>
-    </div><div class="work-card">
-      <div class="work-card-media"><div class="work-placeholder"><div class="work-play">▶</div><div class="work-ph-label">自主制作</div></div></div>
-      <div class="work-card-body"><div class="work-cat">自主制作</div><div class="work-card-title">だだだだ</div><div class="work-card-desc"></div></div>
-    </div><div class="work-card">
-      <div class="work-card-media"><div class="work-placeholder"><div class="work-play">▶</div><div class="work-ph-label">自主制作</div></div></div>
-      <div class="work-card-body"><div class="work-cat">自主制作</div><div class="work-card-title">らららら</div><div class="work-card-desc"></div></div>
-    </div></div>
-  </section><section id="contact" style="display: block;">
-    <div class="contact-inner">
-      <div class="section-label">Contact</div>
-      <h2 class="contact-title" contenteditable="true" dir="ltr" style="unicode-bidi: plaintext;">GET IN<br>TOUCH</h2>
-      <p class="contact-sub" id="pub_contactsub" contenteditable="true" dir="ltr" style="unicode-bidi: plaintext;">お仕事のご依頼・ご相談はこちらからどうぞ。
-2〜3営業日以内にご返信します。</p>
-      <form id="contactForm">
-        <div class="form-group"><label class="form-label">お名前</label><input class="form-input" type="text" name="name" placeholder="山田 太郎" required=""></div>
-        <div class="form-group"><label class="form-label">メール</label><input class="form-input" type="email" name="email" placeholder="example@mail.com" required=""></div>
-        <div class="form-group"><label class="form-label">依頼内容</label>
-          <select class="form-select" name="type"><option value="">選択してください</option><option>MV制作</option><option>企業広告映像</option><option>ライブ背景映像</option><option>SNS用映像</option><option>その他</option></select>
-        </div>
-        <div class="form-group"><label class="form-label">メッセージ</label><textarea class="form-textarea" name="message" placeholder="内容・納期・予算などをお聞かせください。"></textarea></div>
-        <button type="submit" class="form-submit">送信 →</button>
-      </form>
-      <div class="form-success" id="formSuccess"><div class="form-success-icon">✓</div><div class="form-success-text">送信しました。近日中にご連絡いたします。</div></div>
-    </div>
-  </section><footer>
-    <div class="footer-logo">MCZK</div>
-    <div class="footer-socials">
-      <a id="pub_x" href="#" target="_blank" rel="noopener noreferrer">X</a>
-      <a id="pub_ig" href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
-      <a id="pub_yt" href="#" target="_blank" rel="noopener noreferrer">YouTube</a>
-    </div>
-    <div class="footer-copy">© 2026 mczk</div>
-  </footer>
-</div></div>
+            <div class="admin-preview-inner" id="adminPreviewInner"></div>
           </div>
         </div>
       </div>
@@ -1161,7 +601,7 @@ footer{border-top:1px solid var(--border);padding:2.2rem 5vw;display:flex;justif
   </div>
 </div>
 
-<div id="publicSite" style="display: none;">
+<div id="publicSite">
   <nav>
     <a class="nav-logo" href="#" id="navLogo">MCZK</a>
     <ul class="nav-links">
@@ -1170,25 +610,17 @@ footer{border-top:1px solid var(--border);padding:2.2rem 5vw;display:flex;justif
     </ul>
   </nav>
 
-  
-
-  
-
-  
-
-  
-
   <section id="hero">
-    <div class="hero-bg" id="heroBg" style="background: radial-gradient(60% 70% at 15% 60%, rgba(224, 255, 255, 0.07) 0%, transparent 60%), radial-gradient(40% 50% at 80% 30%, rgba(100, 180, 255, 0.05) 0%, transparent 55%), radial-gradient(50% 40% at 50% 90%, rgba(150, 100, 255, 0.04) 0%, transparent 60%), linear-gradient(160deg, rgb(8, 10, 15) 0%, rgb(10, 13, 22) 40%, rgb(8, 10, 15) 100%);"></div>
+    <div class="hero-bg" id="heroBg"></div>
     <div class="hero-grid"></div>
-    <div class="hero-inner" style="grid-template-columns: 1fr 1fr; text-align: left;">
+    <div class="hero-inner">
       <div class="hero-content">
-        <div class="hero-eyebrow" id="pub_eyebrow">3D CG Creator</div>
+        <div class="hero-eyebrow" id="pub_eyebrow"></div>
         <h1 class="hero-title"><span class="t-white">MC</span><span class="t-accent">Z</span><span class="t-white">K</span></h1>
-        <p class="hero-sub" id="pub_herosub">3DCGとモーションで映像をつくっています。</p>
+        <p class="hero-sub" id="pub_herosub"></p>
         <div class="hero-cta">
-          <a href="#work" class="btn btn-accent" id="pub_cta1">Works</a>
-          <a href="#contact" class="btn btn-outline" id="pub_cta2">Contact</a>
+          <a href="#work" class="btn btn-accent" id="pub_cta1"></a>
+          <a href="#contact" class="btn btn-outline" id="pub_cta2"></a>
         </div>
         <div class="hero-socials" id="hero_socials">
           <a class="hero-social-link" id="pub_x_hero" href="#" target="_blank" rel="noopener">X</a>
@@ -1196,11 +628,18 @@ footer{border-top:1px solid var(--border);padding:2.2rem 5vw;display:flex;justif
           <a class="hero-social-link" id="pub_yt_hero" href="#" target="_blank" rel="noopener">YouTube</a>
         </div>
       </div>
-      <div class="hero-reel" style="display: block; margin-top: 0px;">
-        <div class="hero-reel-wrap" id="heroReelWrap"><div class="hero-reel-placeholder"><div class="hero-reel-play">▶</div><div class="hero-reel-label">Reel</div></div></div>
+      <div class="hero-reel">
+        <div class="hero-reel-wrap" id="heroReelWrap">
+          <div class="hero-reel-placeholder" id="heroReelPh">
+            <div class="hero-reel-play">▶</div>
+            <div class="hero-reel-label">Reel</div>
+          </div>
+        </div>
       </div>
     </div>
-  </section><section id="about" style="display: none;">
+  </section>
+
+  <section id="about">
     <div class="section-label">About</div>
     <div class="about-inner" id="aboutInner">
       <div class="about-img-ph" id="aboutImgWrap">IMG</div>
@@ -1209,7 +648,9 @@ footer{border-top:1px solid var(--border);padding:2.2rem 5vw;display:flex;justif
         <p class="about-body" id="pub_about_body"></p>
       </div>
     </div>
-  </section><section id="work">
+  </section>
+
+  <section id="work">
     <div class="work-header reveal">
       <div>
         <div class="section-label">Work</div>
@@ -1224,25 +665,17 @@ footer{border-top:1px solid var(--border);padding:2.2rem 5vw;display:flex;justif
         <button class="filter-btn" data-filter="live">Live</button>
       </div>
     </div>
-    <div class="work-grid" id="workGrid" style="grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));"><div class="work-card" onclick="openModal('1000')">
-      <div class="work-card-media"><div class="work-placeholder"><div class="work-play">▶</div><div class="work-ph-label">自主制作</div></div></div>
-      <div class="work-card-body"><div class="work-cat">自主制作</div><div class="work-card-title">ああああ</div><div class="work-card-desc">ここに説明文を書いてください。</div></div>
-    </div><div class="work-card" onclick="openModal('1774607903080')">
-      <div class="work-card-media"><div class="work-placeholder"><div class="work-play">▶</div><div class="work-ph-label">自主制作</div></div></div>
-      <div class="work-card-body"><div class="work-cat">自主制作</div><div class="work-card-title">だだだだｄ</div><div class="work-card-desc"></div></div>
-    </div><div class="work-card" onclick="openModal('1774607906821')">
-      <div class="work-card-media"><div class="work-placeholder"><div class="work-play">▶</div><div class="work-ph-label">自主制作</div></div></div>
-      <div class="work-card-body"><div class="work-cat">自主制作</div><div class="work-card-title">らららら</div><div class="work-card-desc"></div></div>
-    </div></div>
-  </section><section id="contact" style="display: block;">
+    <div class="work-grid" id="workGrid"></div>
+  </section>
+
+  <section id="contact">
     <div class="contact-inner">
       <div class="section-label">Contact</div>
       <h2 class="contact-title">GET IN<br>TOUCH</h2>
-      <p class="contact-sub" id="pub_contactsub">お仕事のご依頼・ご相談はこちらからどうぞ。
-2〜3営業日以内にご返信します。</p>
+      <p class="contact-sub" id="pub_contactsub"></p>
       <form id="contactForm">
-        <div class="form-group"><label class="form-label">お名前</label><input class="form-input" type="text" name="name" placeholder="山田 太郎" required=""></div>
-        <div class="form-group"><label class="form-label">メール</label><input class="form-input" type="email" name="email" placeholder="example@mail.com" required=""></div>
+        <div class="form-group"><label class="form-label">お名前</label><input class="form-input" type="text" name="name" placeholder="山田 太郎" required></div>
+        <div class="form-group"><label class="form-label">メール</label><input class="form-input" type="email" name="email" placeholder="example@mail.com" required></div>
         <div class="form-group"><label class="form-label">依頼内容</label>
           <select class="form-select" name="type"><option value="">選択してください</option><option>MV制作</option><option>企業広告映像</option><option>ライブ背景映像</option><option>SNS用映像</option><option>その他</option></select>
         </div>
@@ -1251,7 +684,9 @@ footer{border-top:1px solid var(--border);padding:2.2rem 5vw;display:flex;justif
       </form>
       <div class="form-success" id="formSuccess"><div class="form-success-icon">✓</div><div class="form-success-text">送信しました。近日中にご連絡いたします。</div></div>
     </div>
-  </section><footer>
+  </section>
+
+  <footer>
     <div class="footer-logo">MCZK</div>
     <div class="footer-socials">
       <a id="pub_x" href="#" target="_blank" rel="noopener noreferrer">X</a>
@@ -1870,7 +1305,6 @@ function exportData(){const a=document.createElement('a');a.href='data:applicati
 function clearAll(){if(!confirm('全データを削除しますか？'))return;[KEY_W,KEY_S,KEY_D].forEach(k=>localStorage.removeItem(k));renderAdminWL();refreshAdminPreview();alert('削除しました');}
 
 const _initFn=()=>{
-
   const site=getSite();const design=getDesign();
   applyColor(site.color);applyFonts(site.font_heading,site.font_body);
 
@@ -1910,13 +1344,8 @@ const _initFn=()=>{
   // 公開サイトのロゴクリックでAdmin
   const nl=document.getElementById('navLogo');
   if(nl){nl.addEventListener('click',function(e){e.preventDefault();window._openAdmin();});}
-
 };
-if(document.readyState==='complete'||document.readyState==='interactive'){
-  _initFn();
-}else{
-  window.addEventListener('load',_initFn);
-}
+if(document.readyState==='complete'||document.readyState==='interactive'){_initFn();}else{window.addEventListener('load',_initFn);}
 
 // ===== GitHub API 連携 =====
 const KEY_GH = 'mczk_gh';
@@ -1976,10 +1405,7 @@ async function testGitHubConfig(){
 
 async function commitToGitHub(message){
   const cfg=getGitHubConfig();
-  if(!cfg.pat||!cfg.owner||!cfg.repo||!cfg.path){
-    showToast('GitHub API設定が未完了です（管理画面 → 設定 → GitHub API連携設定）','warn');
-    return;
-  }
+  if(!cfg.pat||!cfg.owner||!cfg.repo||!cfg.path){showToast('GitHub API設定が未完了です（管理画面 → 設定 → GitHub API連携設定）','warn');return;}
   showToast('GitHubに保存中...','info');
   try{
     const {html:updatedHtml,sha:currentSha}=await buildHtmlWithBakedData();
@@ -1989,31 +1415,21 @@ async function commitToGitHub(message){
       headers:{'Authorization':'token '+cfg.pat,'Content-Type':'application/json','Accept':'application/vnd.github.v3+json'},
       body:JSON.stringify({message:message||'[Auto] '+new Date().toLocaleString('ja-JP'),content:b64,sha:currentSha})
     });
-    if(putRes.ok){
-      showToast((message||'保存')+' → GitHubに反映しました！','success');
-    } else {
-      const e=await putRes.json();
-      showToast('GitHubエラー: '+(e.message||putRes.status),'error');
-    }
-  }catch(e){
-    showToast('commit失敗: '+e.message,'error');
-  }
+    if(putRes.ok){showToast((message||'保存')+' → GitHubに反映しました！','success');}
+    else{const e=await putRes.json();showToast('GitHubエラー: '+(e.message||putRes.status),'error');}
+  }catch(e){showToast('commit失敗: '+e.message,'error');}
 }
 
 async function buildHtmlWithBakedData(){
   const cfg=getGitHubConfig();
-  const works=getWorks();
-  const site=getSite();
-  const design=getDesign();
+  const works=getWorks();const site=getSite();const design=getDesign();
   const pw=localStorage.getItem('mczk_pw')||'';
   const apiUrl='https://api.github.com/repos/'+cfg.owner+'/'+cfg.repo+'/contents/'+cfg.path;
   const res=await fetch(apiUrl,{headers:{'Authorization':'token '+cfg.pat,'Accept':'application/vnd.github.v3+json'}});
   const data=await res.json();
   let raw=decodeURIComponent(escape(atob(data.content.replace(/\n/g,''))));
-  const ms='/* __BAKED_DATA_START__ */';
-  const me='/* __BAKED_DATA_END__ */';
-  const si=raw.indexOf(ms);
-  const ei=raw.indexOf(me);
+  const ms='/* __BAKED_DATA_START__ */';const me='/* __BAKED_DATA_END__ */';
+  const si=raw.indexOf(ms);const ei=raw.indexOf(me);
   const block=ms+'\n(function(){\n'+
     '  var _w='+JSON.stringify(works)+';\n'+
     '  var _s='+JSON.stringify(site)+';\n'+
@@ -2023,11 +1439,8 @@ async function buildHtmlWithBakedData(){
     '  if(_s)localStorage.setItem(\'mczk_site\',JSON.stringify(_s));\n'+
     '  if(_d)localStorage.setItem(\'mczk_design\',JSON.stringify(_d));\n'+
     '})();\n'+me;
-  if(si!==-1&&ei!==-1){
-    raw=raw.substring(0,si)+block+raw.substring(ei+me.length);
-  } else {
-    raw=raw.replace('</script>\n</body>',block+'\n</script>\n</body>');
-  }
+  if(si!==-1&&ei!==-1){raw=raw.substring(0,si)+block+raw.substring(ei+me.length);}
+  else{raw=raw.replace('</script>\n</body>',block+'\n</script>\n</body>');}
   raw=raw.replace(/(<div\s+id="adminOverlay")[^>]*>/,'$1>');
   return {html:raw,sha:data.sha};
 }
@@ -2057,6 +1470,5 @@ function showToast(msg, type){
 }
 
 </script>
-
-
-<div id="eagle-drag-images" style="position: fixed; top: -100000px;"></div><div id="toastContainer" style="position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 9999; display: flex; flex-direction: column; gap: 0.5rem; pointer-events: none;"><div style="background: var(--surface); border: 1px solid var(--border); border-radius: 3px; padding: 0.7rem 1.2rem; font-family: &quot;Space Mono&quot;, monospace; font-size: 0.7rem; color: var(--muted); letter-spacing: 0.06em; pointer-events: auto; box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 20px; max-width: 320px; line-height: 1.5; opacity: 1; transform: none; transition: opacity 0.25s, transform 0.25s;">GitHubに保存中...</div><div style="background: var(--surface); border: 1px solid var(--border); border-radius: 3px; padding: 0.7rem 1.2rem; font-family: &quot;Space Mono&quot;, monospace; font-size: 0.7rem; color: var(--muted); letter-spacing: 0.06em; pointer-events: auto; box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 20px; max-width: 320px; line-height: 1.5; opacity: 1; transform: none; transition: opacity 0.25s, transform 0.25s;">GitHubに保存中...</div><div style="background: var(--surface); border: 1px solid rgba(224, 255, 255, 0.3); border-radius: 3px; padding: 0.7rem 1.2rem; font-family: &quot;Space Mono&quot;, monospace; font-size: 0.7rem; color: var(--accent); letter-spacing: 0.06em; pointer-events: auto; box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 20px; max-width: 320px; line-height: 1.5; opacity: 1; transform: none; transition: opacity 0.25s, transform 0.25s;">Works を保存しました → GitHubに反映しました！</div><div style="background: var(--surface); border: 1px solid var(--border); border-radius: 3px; padding: 0.7rem 1.2rem; font-family: &quot;Space Mono&quot;, monospace; font-size: 0.7rem; color: var(--muted); letter-spacing: 0.06em; pointer-events: auto; box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 20px; max-width: 320px; line-height: 1.5; opacity: 1; transform: none; transition: opacity 0.25s, transform 0.25s;">GitHubに保存中...</div></div></body><inquiry-assist style="font-family: Arial, sans-serif;"></inquiry-assist><div id="immersive-translate-popup" style="all: initial"></div></html>
+</body>
+</html>
