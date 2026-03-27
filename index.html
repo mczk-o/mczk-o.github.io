@@ -782,6 +782,12 @@ footer{border-top:1px solid var(--border);padding:2.2rem 5vw;display:flex;justif
       <div class="wl-title">ああああ</div>
       <span class="wl-pub-badge" onclick="togglePublished(0)" title="クリックで公開/下書き切り替え">公開</span>
       <div class="wl-actions"><button class="ib ib-edit" onclick="editWork(0)">編集</button><button class="ib ib-del" onclick="deleteWork(0)">削除</button></div>
+    </div><div class="wl-item" draggable="true" data-id="1774607903080">
+      <span style="color:var(--muted);font-size:0.8rem;margin-right:0.2rem;cursor:grab;">⠿</span>
+      <div class="wl-cat">自主制作</div>
+      <div class="wl-title">だだだだｄ</div>
+      <span class="wl-pub-badge" onclick="togglePublished(1)" title="クリックで公開/下書き切り替え">公開</span>
+      <div class="wl-actions"><button class="ib ib-edit" onclick="editWork(1)">編集</button><button class="ib ib-del" onclick="deleteWork(1)">削除</button></div>
     </div></div>
         <div class="a-card">
           <div class="a-card-title" id="fmLabel">新規追加</div>
@@ -1106,6 +1112,9 @@ footer{border-top:1px solid var(--border);padding:2.2rem 5vw;display:flex;justif
     <div class="work-grid" id="workGrid" style="grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));"><div class="work-card">
       <div class="work-card-media"><div class="work-placeholder"><div class="work-play">▶</div><div class="work-ph-label">自主制作</div></div></div>
       <div class="work-card-body"><div class="work-cat">自主制作</div><div class="work-card-title">ああああ</div><div class="work-card-desc">ここに説明文を書いてください。</div></div>
+    </div><div class="work-card">
+      <div class="work-card-media"><div class="work-placeholder"><div class="work-play">▶</div><div class="work-ph-label">自主制作</div></div></div>
+      <div class="work-card-body"><div class="work-cat">自主制作</div><div class="work-card-title">だだだだｄ</div><div class="work-card-desc"></div></div>
     </div></div>
   </section><section id="contact" style="display: block;">
     <div class="contact-inner">
@@ -1208,7 +1217,7 @@ footer{border-top:1px solid var(--border);padding:2.2rem 5vw;display:flex;justif
     </div>
     <div class="work-grid" id="workGrid" style="grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));"><div class="work-card" onclick="openModal('1000')">
       <div class="work-card-media"><div class="work-placeholder"><div class="work-play">▶</div><div class="work-ph-label">自主制作</div></div></div>
-      <div class="work-card-body"><div class="work-cat">自主制作</div><div class="work-card-title">自主制作 01</div><div class="work-card-desc">ここに説明文を書いてください。</div></div>
+      <div class="work-card-body"><div class="work-cat">自主制作</div><div class="work-card-title">ああああ</div><div class="work-card-desc">ここに説明文を書いてください。</div></div>
     </div></div>
   </section><section id="contact" style="display: block;">
     <div class="contact-inner">
@@ -1241,11 +1250,11 @@ footer{border-top:1px solid var(--border);padding:2.2rem 5vw;display:flex;justif
 <div class="modal-bg" id="modal" onclick="closeModal(event)">
   <div class="modal-box">
     <button class="modal-close" onclick="document.getElementById('modal').classList.remove('open')">✕</button>
-    <div class="modal-cat-label" id="modal-cat">自主制作</div>
-    <div class="modal-title" id="modal-title">自主制作 01</div>
-    <div class="modal-media" id="modal-media"><div class="modal-media-ph">動画またはサムネイルを設定してください</div></div>
-    <div class="modal-body" id="modal-body">ここに説明文を書いてください。</div>
-    <div class="modal-tags-row" id="modal-tags"><span class="modal-tag-chip">Blender</span><span class="modal-tag-chip">After Effects</span></div>
+    <div class="modal-cat-label" id="modal-cat"></div>
+    <div class="modal-title" id="modal-title"></div>
+    <div class="modal-media" id="modal-media"></div>
+    <div class="modal-body" id="modal-body"></div>
+    <div class="modal-tags-row" id="modal-tags"></div>
   </div>
 </div>
 
@@ -2002,7 +2011,7 @@ function buildHtmlWithBakedData(){
   let raw = document.documentElement.outerHTML;
   const bakedMarkerStart = '/* __BAKED_DATA_START__ */
 (function(){
-  var _w=[{"id":1000,"cat":"personal","title":"ああああ","videoUrl":"","videoData":"","thumb":"","body":"ここに説明文を書いてください。","bodyHtml":"ここに説明文を書いてください。","tags":["Blender","After Effects"],"published":true,"createdAt":1000}];
+  var _w=[{"id":1000,"cat":"personal","title":"ああああ","videoUrl":"","videoData":"","thumb":"","body":"ここに説明文を書いてください。","bodyHtml":"ここに説明文を書いてください。","tags":["Blender","After Effects"],"published":true,"createdAt":1000},{"id":1774607903080,"cat":"personal","title":"だだだだｄ","videoUrl":"","videoData":"","thumb":"","body":"","bodyHtml":"","tags":[],"published":true,"createdAt":1774607903080}];
   var _s={"eyebrow":"3D CG Creator","herosub":"3DCGとモーションで映像をつくっています。","cta1":"Works","cta2":"Contact","contactsub":"お仕事のご依頼・ご相談はこちらからどうぞ。\n2〜3営業日以内にご返信します。","x":"#","ig":"#","yt":"#","reel":"","color":"#e0ffff","font_heading":"Bebas Neue","font_body":"Noto Sans JP","formspree":"","site_title":"","site_desc":"","ogp_image":""};
   var _d={"show_about":false,"show_contact":true,"hero_layout":"split","cols":"auto","section_order":["hero","about","work","contact"],"about_title":"About Me","about_body":"","about_img":""};
   if(_w&&!localStorage.getItem('mczk_works'))localStorage.setItem('mczk_works',JSON.stringify(_w));
