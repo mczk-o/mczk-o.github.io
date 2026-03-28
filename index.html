@@ -1503,48 +1503,15 @@ async function buildHtmlWithBakedData(){
   const res=await fetch(apiUrl,{headers:{'Authorization':'token '+cfg.pat,'Accept':'application/vnd.github.v3+json'}});
   const data=await res.json();
   let raw=decodeURIComponent(escape(atob(data.content.replace(/\n/g,''))));
-  const bakedTag='<script id="baked-data">';
-  const bakedTagEnd='<\/script>';
-  const si=raw.indexOf(bakedTag);
-  const ei=raw.indexOf(bakedTagEnd,si);
-  const newBlock=bakedTag+'\n(function(){\n'+
-    '  var _w='+JSON.stringify(works)+';\n'+
-    '  var _s='+JSON.stringify(site)+';\n'+
-    '  var _d='+JSON.stringify(design)+';\n'+
-    (pw?'  if(!localStorage.getItem(\'mczk_pw\'))localStorage.setItem(\'mczk_pw\','+JSON.stringify(pw)+');\n':'')+
-    '  if(_w)localStorage.setItem(\'mczk_works\',JSON.stringify(_w));\n'+
-    '  if(_s)localStorage.setItem(\'mczk_site\',JSON.stringify(_s));\n'+
-    '  if(_d)localStorage.setItem(\'mczk_design\',JSON.stringify(_d));\n'+
-    '})();\n'+bakedTagEnd;
-  if(si!==-1&&ei!==-1){raw=raw.substring(0,si)+newBlock+raw.substring(ei+bakedTagEnd.length);}
-  raw=raw.replace(/(<div\s+id="adminOverlay")[^>]*>/,'$1>');
-  return {html:raw,sha:data.sha};
-}
-
-// ===== トースト通知 =====
-function showToast(msg, type){
-  let container = document.getElementById('toastContainer');
-  if(!container){
-    container = document.createElement('div');
-    container.id = 'toastContainer';
-    container.style.cssText = 'position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;flex-direction:column;gap:0.5rem;pointer-events:none;';
-    document.body.appendChild(container);
-  }
-  const toast = document.createElement('div');
-  const colors = {error:'#f87171',warn:'#fbbf24',info:'var(--muted)',success:'var(--accent)'};
-  const borderColors = {error:'#f8717155',warn:'#fbbf2455',info:'var(--border)',success:'rgba(224,255,255,0.3)'};
-  const t = type || 'success';
-  toast.style.cssText = 'background:var(--surface);border:1px solid ' + (borderColors[t]||borderColors.success) + ';border-radius:3px;padding:0.7rem 1.2rem;font-family:\'Space Mono\',monospace;font-size:0.7rem;color:' + (colors[t]||colors.success) + ';letter-spacing:0.06em;pointer-events:auto;box-shadow:0 4px 20px rgba(0,0,0,0.4);max-width:320px;line-height:1.5;opacity:0;transform:translateY(8px);transition:opacity 0.25s,transform 0.25s;';
-  toast.textContent = msg;
-  container.appendChild(toast);
-  requestAnimationFrame(function(){ toast.style.opacity='1'; toast.style.transform='none'; });
-  const duration = (type === 'info') ? 8000 : 4000;
-  setTimeout(function(){
-    toast.style.opacity='0'; toast.style.transform='translateY(8px)';
-    setTimeout(function(){ toast.remove(); }, 300);
-  }, duration);
-}
-
+  const bakedTag='<script id="baked-data">
+(function(){
+  var _w=[{"published":true,"cat":"personal","thumb":"","body":"yoake creativeで21人のクリエイターが共同自主制作「聲の形」にて 3D Assets Design として\n3Dアセット制作で関わらせて頂きました。","videoData":"","title":"聲の形 - A Silent Voice Short Film","id":1774608119577,"tags":[],"bodyHtml":"yoake creativeで21人のクリエイターが共同自主制作「聲の形」にて 3D Assets Design として\n3Dアセット制作で関わらせて頂きました。<!-- notionvc: 96888253-7482-4560-9c30-3fade43534f0 -->","videoUrl":"https://www.youtube.com/embed/NDJTkCLxLsM","createdAt":1774608119578},{"published":true,"cat":"three","thumb":"","body":"PändoraさんのVsingerデビューに向けてのティザーPVにて\n 3DAssets set up としてお手伝いさせていただきました","id":1774608122782,"videoData":"","title":"Pändora","tags":[],"bodyHtml":"PändoraさんのVsingerデビューに向けてのティザーPVにて\n 3DAssets set up としてお手伝いさせていただきました<!-- notionvc: 03016579-d8d9-4177-97a2-81af4078038f -->","videoUrl":"https://www.youtube.com/embed/pmdl-U1ZHHc","createdAt":1774608122782},{"tags":[],"title":"泥中に咲く","videoData":"","id":1774608125244,"videoUrl":"https://www.youtube.com/embed/mVfzoF2ekR4","bodyHtml":"「泥中に咲く」歌ってみたMVにて、3D背景を担当させていただきました。<!-- notionvc: 943cdeb1-14d3-42de-8d9d-1c2f064aeea1 -->","createdAt":1774608125244,"published":true,"thumb":"","cat":"mv","body":"「泥中に咲く」歌ってみたMVにて、3D背景を担当させていただきました。"}];
+  var _s={"eyebrow":"3D CG Creator","herosub":"3DCGとモーションで映像をつくっています。","cta1":"Works","cta2":"Contact","contactsub":"お仕事のご依頼・ご相談はこちらからどうぞ。\n2〜3営業日以内にご返信します。","x":"#","ig":"#","yt":"#","reel":"","color":"#e0ffff","font_heading":"Bebas Neue","font_body":"Noto Sans JP","formspree":"https://formspree.io/f/meernepp","site_title":"","site_desc":"","ogp_image":""};
+  var _d={"show_about":false,"show_contact":true,"hero_layout":"split","cols":"auto","section_order":["hero","about","work","contact"],"about_title":"About Me","about_body":"","about_img":""};
+  if(_w)localStorage.setItem('mczk_works',JSON.stringify(_w));
+  if(_s)localStorage.setItem('mczk_site',JSON.stringify(_s));
+  if(_d)localStorage.setItem('mczk_design',JSON.stringify(_d));
+})();
 </script>
 <script id="baked-data">
 (function(){
