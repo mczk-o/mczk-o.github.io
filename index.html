@@ -1504,7 +1504,7 @@ async function buildHtmlWithBakedData(){
   const data=await res.json();
   const _bytes=new Uint8Array(atob(data.content.replace(/\n/g,'')).split('').map(c=>c.charCodeAt(0)));let raw=new TextDecoder('utf-8').decode(_bytes);
   const bakedTag='<script id="baked-data">';
-  const bakedTagEnd='</script>';
+  const bakedTagEnd='<\/script>';
   const si=raw.lastIndexOf(bakedTag);
   const ei=raw.indexOf(bakedTagEnd,si);
   const newBlock=bakedTag+'\n(function(){\n'+
